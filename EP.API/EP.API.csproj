@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="6.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="6.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.3">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+		<PackageReference Include="Scrutor" Version="4.1.0" />
+		<PackageReference Include="Serilog" Version="2.11.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="5.0.0" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+		<PackageReference Include="Stripe.net" Version="39.108.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EP.Application\EP.Application.csproj" />
+		<ProjectReference Include="..\EP.Infrastructure\EP.Infrastructure.csproj" />
+		<ProjectReference Include="..\EP.Shared\EP.Shared.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Include="wwwroot\Images\Movies\234396bb-413c-4e11-902d-e95bf65a4441.jpg" />
+	  <None Include="wwwroot\Images\Movies\4c994d5a-687d-49c4-a195-4361121f3ff0.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Logs\" />
+	  <Folder Include="wwwroot\Images\QrCodes\" />
+	  <Folder Include="wwwroot\swagger-ui\" />
+	</ItemGroup>
+
+</Project>

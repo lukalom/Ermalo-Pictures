@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EP.Infrastructure\EP.Infrastructure.csproj" />
+		<ProjectReference Include="..\EP.Shared\EP.Shared.csproj" />
+		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper" Version="11.0.1" />
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.4" />
+		<PackageReference Include="Stripe.net" Version="39.108.0" />
+		<PackageReference Include="System.Configuration.ConfigurationManager" Version="6.0.0" />
+		<PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+		<PackageReference Include="ZXing.Net.Bindings.Windows.Compatibility" Version="0.16.10" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Services\Account\Claims\DTO\Response\" />
+	</ItemGroup>
+
+</Project>

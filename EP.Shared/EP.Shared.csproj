@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	<TargetFramework>net6.0</TargetFramework>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+	<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+	<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.3" />
+	<PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+	<PackageReference Include="SendGrid" Version="9.27.0" />
+	<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.10.0" />
+	<PackageReference Include="Twilio" Version="5.74.0" />
+	<PackageReference Include="Twilio.AspNet.Core" Version="5.73.0" />
+  </ItemGroup>
+
+	
+
+</Project>
